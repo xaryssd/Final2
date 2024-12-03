@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio de Titouan Mouysset</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+  <aside>
+    <li class="profile-icon">
+        <img src="icons/moi2.jpg" alt="Mon image personnelle">
+      </li>
+    <ul class="Links">
+      
+      <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+        <p>Accueil</p>
+      </li>
+      <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+        <p>À propos</p>
+      </li>
+      <li onclick="Navigate(2)"><i class="fa-solid fa-chart-bar"></i>
+        <p>Compétences</p>
+    </li>    
+      <li onclick="Navigate(3)"><i class="fa-solid fa-list"></i>
+        <p>Projets</p>
+      </li>
+      <li onclick="Navigate(4)"><i class="fa-solid fa-images"></i>
+        <p>Certifications</p>
+      </li>
+      <li onclick="Navigate(5)"><i class="fa-solid fa-comments"></i>
+        <p>Contact</p>
+      </li>
+    </ul>
+  </aside>
+
+  <div class="swiper mySwiper">
+    <div class="SlideContainer swiper-wrapper">
+      <!-- Slide Accueil -->
+      <div class="swiper-slide home-slide">
+        <div class="HomeContent">
+          <h1>Bienvenue ! Je suis <span class="stylized-name">Titouan Mouysset</span>,</h1>
+          <h2>Un <span class="proffesions">étudiant passionné</span></h2>
+          <p class="heroline">Actuellement en terminale en BUT Réseau et télécommunication, je suis passionné par la cybersécurité et le Design Web.</p>
+          <div class="buttonGroup"><button class="primary" onclick="NavigateToContact()">Me contacter</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide À propos -->
+      <div class="swiper-slide">
+        <div class="about-us">
+            <h1 class="heading">À propos</h1>
+            <h3 class="sub-heading">Je suis Titouan Mouysset, <span class="proffesions">un passionné d'informatique</span></h3>
+            <p class="aboutme-deatils">
+                Étudiant motivé et curieux, je suis toujours à la recherche de nouvelles opportunités pour apprendre et approfondir mes connaissances. 
+                Avec une passion marquée pour l'informatique et la cybersécurité, j'aime explorer des domaines variés pour élargir mes compétences.
+            </p>
+            <div class="about-me-divison">
+                <div class="about-column">
+                    <h4>Mes passions</h4>
+                    <p>
+                        Les défis techniques, tels que les CTF (Capture The Flag) sur des plateformes comme <strong>root.me</strong> et <strong>TryHackMe</strong>, me permettent de développer mes compétences tout en relevant des challenges stimulants.
+                    </p>
+                </div>
+                <div class="about-column">
+                    <h4>Mes engagements</h4>
+                    <p>
+                        Sérieux et responsable, je m’engage toujours à mener à terme les projets que j’entreprends, avec détermination et envie. Mon objectif est de transformer chaque opportunité en une expérience enrichissante.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+      <div class="swiper-slide skills">
+        <h1 class="heading">Compétences</h1>
+        <div class="skill-list">
+            <div class="skill">
+                <i class="fa-brands fa-linux"></i>
+                <h2>Linux</h2>
+                <p>J'utilise Linux quotidiennement pour mes études et mes loisirs.</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-github"></i>
+                <h2>GitHub</h2>
+                <p>Utilisateur régulier et à l'aise avec GitHub, j'ai développé et hébergé ce portfolio via GitHub Pages.</p>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-language"></i>
+                <h2>Langues</h2>
+                <p>
+                    <strong>Anglais (B1 - B2)</strong> :<br>
+                    - Lire et comprendre une documentation technique.<br>
+                    - Tenir une conversation professionnelle.
+                </p>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-code"></i>
+                <h2>Programmation</h2>
+                <p>
+                    - <strong>Python</strong> : Connaissances solides grâce à mes projets personnels et mes études.<br>
+                    - <strong>HTML et CSS</strong> : Compétences avancées pour le développement web.<br>
+                    - <strong>JavaScript, Java, SQL et LUA</strong> : Notions de base acquises lors de mes études.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="swiper-slide services">
+      <h1 class="heading">Projets</h1>
+      <a href="project1.html" class="service">
+          <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
+          <h2>SAÉ11</h2>
+          <p>Se sensibiliser à l’hygiène informatique et à la cybersécurité</p>
+      </a>
+      <a href="project2.html" class="service">
+          <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+          <h2>SAE 13</h2>
+          <p>Découvrir un dispositif de transmission</p>
+      </a>
+      <a href="project3.html" class="service">
+          <div class="service-icon"><i class="fa-solid fa-microphone"></i></div>
+          <h2>SAE 14</h2>
+          <p>Se présenter sur Internet</p>
+      </a>
+  </div>
+  
+
+      <!-- Slide Certifications -->
+     <div class="swiper-slide gallery">
+    <h1 class="heading">Certifications</h1>
+    <div class="certification-container">
+        <div class="certification-item">
+            <h3 class="certification-title">Mooc ANSSI</h3>
+            <div class="project">
+                <img src="icons/moocANSSI.png" alt="Mooc ANSSI">
+                <button onclick="window.open('file:///C:/Users/Titouan/Documents/TitouanMouyssetPortFolio/icons/Attestation_MoocAnssi%20_Titouan_Mouysset.pdf')">Voir la certification</button>
+            </div>
+        </div>
+        <div class="certification-item">
+            <h3 class="certification-title">Certificat de Scolarité</h3>
+            <div class="project">
+                <img src="icons/UM.png" alt="Certificat de Scolarité">
+                <button onclick="window.open('file:///C:/Users/Titouan/Documents/TitouanMouyssetPortFolio/icons/Certificat_de_Scolarit%C3%A9_BARTB1_2024-2025_TITOUAN_MOUYSSET.pdf')">Voir la certification</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    
+      <!-- Slide Contact -->
+      <div class="swiper-slide contactMe">
+        <h1 class="heading">Contact</h1>
+        <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+          <h3>Téléphone</h3>
+          <p>0760209501</p>
+        </div>
+        <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+          <h3>Email</h3>
+          <p>titouanmouysset@gmail.com</p>
+        </div>
+        <form>
+          <h2>Envoyez-moi un message<div class="SocialLinks">
+          </div></h2>
+          <input type="text" placeholder="Nom">
+          <input type="text" placeholder="Email">
+          <textarea rows="10" placeholder="Votre message..."></textarea>
+          <button class="primary">Envoyer</button>
+        </form>
+        <footer>
+          <li>Copyright © 2023 Titouan Mouysset.</li>
+        </footer>
+      </div>
+    </div>
+  </div>
+</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
