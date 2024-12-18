@@ -437,7 +437,7 @@ aside li i {
 }
 
 .contactinfo i {
-    padding: 10px;
+    padding: 0px;
     font-size: 2.5rem;
     color: #80ed99;
     margin: 20px auto;
@@ -535,11 +535,26 @@ form h2 .SocialLinks i:hover{
     overflow: sauto;
 }
 
+.Links li {
+    margin: 0px 0; /* Réduire l'espace entre les éléments du menu */
+}
+
+/* Désactiver le défilement uniquement pour les pages spécifiées */
+html[data-page="no-scroll"], 
+html[data-page="no-scroll"] body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
 .profile-icon img {
     width: 180px  !important; /* Ajuste la taille selon tes besoins */
     height: 220px  !important;
     border-radius: 50%; /* Rendre l'image ronde */
-    margin: 10px auto; /* Centrer dans la liste */
+    margin: 0px auto; /* Centrer dans la liste */
     display: block;
 }
 .profile-icon {
@@ -785,110 +800,7 @@ body {
     text-transform: uppercase;
 }
 
-.project img {
-    width: 100%; /* Adapte à la largeur du conteneur */
-    height: auto; /* Maintient les proportions */
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
 
-.project button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #1d8637;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-}
-
-.project button:hover {
-    background-color: #145a2a; /* Couleur au survol */
-}
-@media (max-width: 1024px) {
-    .certification-container {
-        flex-wrap: wrap; /* Autorise le retour à la ligne */
-        justify-content: center; /* Centre les certifications */
-    }
-
-    .certification-item {
-        flex: 1 1 calc(50% - 20px); /* Deux certifications côte à côte */
-    }
-}
-
-@media (max-width: 768px) {
-    .certification-item {
-        flex: 1 1 100%; /* Une certification par ligne */
-        max-width: 100%;
-    }
-}
-
-
-.certification-container {
-    display: flex; /* Flexbox pour aligner les items */
-    flex-wrap: nowrap; /* Retour à la ligne sur petits écrans */
-    gap: 40px; /* Espacement entre les certifications */
-    justify-content: center; /* Centrer les certifications */
-    padding: 30px;
-}
-
-.certification-item {
-    flex: 1 1 400px; /* Largeur minimum de 400px */
-    max-width: 450px; /* Largeur maximale */
-    background-color: #212529; /* Fond sombre */
-    padding: 20px;
-    border-radius: 15px; /* Coins arrondis */
-    text-align: center; /* Centrer le contenu */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ombre élégante */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
-}
-
-.certification-item:hover {
-    transform: translateY(-5px); /* Animation au survol */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Ombre plus marquée */
-}
-
-.certification-title {
-    font-size: 1.2rem; /* Taille réduite pour le texte */
-    font-weight: bold;
-    color: #80ed99; /* Vert pour le titre */
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    line-height: 1.5; /* Espacement entre les lignes */
-}
-
-.project img {
-    width: 90%; /* Agrandit l'image dans son conteneur */
-    max-height: 250px; /* Limite la hauteur pour un meilleur ratio */
-    border-radius: 10px; /* Coins arrondis */
-    margin-bottom: 15px; /* Espacement avec le bouton */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Ombre élégante */
-    transition: transform 0.3s ease; /* Animation légère */
-}
-
-.project img:hover {
-    transform: scale(1.05); /* Zoom au survol */
-}
-
-.project button {
-    width: 80%; /* Largeur augmentée pour un design équilibré */
-    padding: 12px 20px; /* Bouton plus large */
-    background-color: #1d8637; /* Vert bouton */
-    color: white;
-    border: none;
-    border-radius: 10px; /* Coins arrondis */
-    font-size: 1.2rem; /* Taille du texte augmentée */
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation */
-}
-
-.project button:hover {
-    background-color: #145a2a; /* Couleur au survol */
-    transform: translateY(-3px); /* Légère élévation au survol */
 }
 /* Style des liens des projets */
 .services .service a,
@@ -921,3 +833,34 @@ a:hover {
 a:visited {
     color: white; /* Conserve la couleur blanche même après visite */
 }
+.language-switcher {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .language-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease; /* Ajout d'une transition fluide */
+  }
+
+  .language-button img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+  }
+
+  /* Effet au survol */
+  .language-button:hover {
+    background-color: #0056b3; /* Changement de couleur */
+    transform: scale(1.1); /* Légère mise en avant */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre */
+  }

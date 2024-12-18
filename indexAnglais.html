@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr"data-page="no-scroll">
+<html lang="en"data-page="no-scroll">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio de Titouan Mouysset</title>
+  <title>Portfolio of Titouan Mouysset</title>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-  
+<body class="no-scroll">
+
 <main>
   <aside>
     <div class="language-switcher">
       <button onclick="changeLanguage()" class="language-button">
-        <img src="icons/US.png" alt="English" style="width: 20px; height: 15px; margin-right: 8px;"> Anglais
+        <img src="icons/france.png" alt="English" style="width: 20px; height: 15px; margin-right: 8px;"> French
       </button>
     </div>
     <li class="profile-icon">
-        <img src="icons/moi2.jpg" alt="Mon image personnelle">
+        <img src="icons/moi2.jpg" alt="My profile picture">
       </li>
     <ul class="Links">
       
       <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
-        <p>Accueil</p>
+        <p>Home</p>
       </li>
       <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
-        <p>À propos</p>
+        <p>About</p>
       </li>
       <li onclick="Navigate(2)"><i class="fa-solid fa-chart-bar"></i>
-        <p>Compétences</p>
+        <p>Skills</p>
     </li>    
       <li onclick="Navigate(3)"><i class="fa-solid fa-list"></i>
-        <p>Projets</p>
+        <p>Projects</p>
       </li>
       <li onclick="Navigate(4)"><i class="fa-solid fa-images"></i>
         <p>Certifications</p>
@@ -44,37 +44,37 @@
 
   <div class="swiper mySwiper">
     <div class="SlideContainer swiper-wrapper">
-      <!-- Slide Accueil -->
+      <!-- Slide Home -->
       <div class="swiper-slide home-slide">
         <div class="HomeContent">
-          <h1>Bienvenue ! Je suis <span class="stylized-name">Titouan Mouysset</span>,</h1>
-          <h2>Un <span class="proffesions">étudiant passionné</span></h2>
-          <p class="heroline">Actuellement en terminale en BUT Réseau et télécommunication, je suis passionné par la cybersécurité et le Design Web.</p>
-          <div class="buttonGroup"><button class="primary" onclick="NavigateToContact()">Me contacter</button>
+          <h1>Welcome! I am <span class="stylized-name">Titouan Mouysset</span>,</h1>
+          <h2>A <span class="proffesions">passionate student</span></h2>
+          <p class="heroline">Currently in my final year of a BUT in Networks and Telecommunications, I am passionate about cybersecurity and web design.</p>
+          <div class="buttonGroup"><button class="primary" onclick="NavigateToContact()">Contact me</button>
           </div>
         </div>
       </div>
 
-      <!-- Slide À propos -->
+      <!-- Slide About -->
       <div class="swiper-slide">
         <div class="about-us">
-            <h1 class="heading">À propos</h1>
-            <h3 class="sub-heading">Je suis Titouan Mouysset, <span class="proffesions">un passionné d'informatique</span></h3>
+            <h1 class="heading">About</h1>
+            <h3 class="sub-heading">I am Titouan Mouysset, <span class="proffesions">an IT enthusiast</span></h3>
             <p class="aboutme-deatils">
-                Étudiant motivé et curieux, je suis toujours à la recherche de nouvelles opportunités pour apprendre et approfondir mes connaissances. 
-                Avec une passion marquée pour l'informatique et la cybersécurité, j'aime explorer des domaines variés pour élargir mes compétences.
+                A motivated and curious student, I am always looking for new opportunities to learn and deepen my knowledge. 
+                With a strong passion for IT and cybersecurity, I love exploring different fields to expand my skillset.
             </p>
             <div class="about-me-divison">
                 <div class="about-column">
-                    <h4>Mes passions</h4>
+                    <h4>My passions</h4>
                     <p>
-                        Les défis techniques, tels que les CTF (Capture The Flag) sur des plateformes comme <strong>root.me</strong> et <strong>TryHackMe</strong>, me permettent de développer mes compétences tout en relevant des challenges stimulants.
+                        Technical challenges, such as CTFs (Capture The Flag) on platforms like <strong>root.me</strong> and <strong>TryHackMe</strong>, allow me to develop my skills while tackling stimulating challenges.
                     </p>
                 </div>
                 <div class="about-column">
-                    <h4>Mes engagements</h4>
+                    <h4>My commitments</h4>
                     <p>
-                        Sérieux et responsable, je m’engage toujours à mener à terme les projets que j’entreprends, avec détermination et envie. Mon objectif est de transformer chaque opportunité en une expérience enrichissante.
+                        Serious and responsible, I am always committed to completing the projects I undertake with determination and enthusiasm. My goal is to turn every opportunity into an enriching experience.
                     </p>
                 </div>
             </div>
@@ -83,35 +83,36 @@
     
 
 
+
       <div class="swiper-slide skills">
-        <h1 class="heading">Compétences</h1>
+        <h1 class="heading">Skills</h1>
         <div class="skill-list">
             <div class="skill">
                 <i class="fa-brands fa-linux"></i>
                 <h2>Linux</h2>
-                <p>J'utilise Linux quotidiennement pour mes études et mes loisirs.</p>
+                <p>I use Linux daily for my studies and hobbies.</p>
             </div>
             <div class="skill">
                 <i class="fa-brands fa-github"></i>
                 <h2>GitHub</h2>
-                <p>Utilisateur régulier et à l'aise avec GitHub, j'ai développé et hébergé ce portfolio via GitHub Pages.</p>
+                <p>A regular and proficient GitHub user, I developed and hosted this portfolio via GitHub Pages.</p>
             </div>
             <div class="skill">
                 <i class="fa-solid fa-language"></i>
-                <h2>Langues</h2>
+                <h2>Languages</h2>
                 <p>
-                    <strong>Anglais (B1 - B2)</strong> :<br>
-                    - Lire et comprendre une documentation technique.<br>
-                    - Tenir une conversation professionnelle.
+                    <strong>English (B1 - B2)</strong>:<br>
+                    - Read and understand technical documentation.<br>
+                    - Maintain a professional conversation.
                 </p>
             </div>
             <div class="skill">
                 <i class="fa-solid fa-code"></i>
-                <h2>Programmation</h2>
+                <h2>Programming</h2>
                 <p>
-                    - <strong>Python</strong> : Connaissances solides grâce à mes projets personnels et mes études.<br>
-                    - <strong>HTML et CSS</strong> : Compétences avancées pour le développement web.<br>
-                    - <strong>JavaScript, Java, SQL et LUA</strong> : Notions de base acquises lors de mes études.
+                    - <strong>Python</strong>: Solid knowledge from personal projects and studies.<br>
+                    - <strong>HTML and CSS</strong>: Advanced skills for web development.<br>
+                    - <strong>JavaScript, Java, SQL, and LUA</strong>: Basic knowledge acquired during my studies.
                 </p>
             </div>
         </div>
@@ -119,22 +120,23 @@
     
 
 
+
     <div class="swiper-slide services">
-      <h1 class="heading">Projets</h1>
-      <a href="project1.html" class="service">
+      <h1 class="heading">Projects</h1>
+      <a href="project1Anglais.html" class="service">
           <div class="service-icon"><i class="fa-solid fa-lock"></i></div>
           <h2>SAÉ11</h2>
-          <p>Se sensibiliser à l’hygiène informatique et à la cybersécurité</p>
+          <p>Raising awareness about cybersecurity and IT hygiene</p>
       </a>
-      <a href="project2.html" class="service">
+      <a href="project2Anglais.html" class="service">
           <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
           <h2>SAE 13</h2>
-          <p>Découvrir un dispositif de transmission</p>
+          <p>Discovering a transmission device</p>
       </a>
-      <a href="project3.html" class="service">
+      <a href="project3Anglais.html" class="service">
           <div class="service-icon"><i class="fa-solid fa-microphone"></i></div>
           <h2>SAE 14</h2>
-          <p>Se présenter sur Internet</p>
+          <p>Presenting yourself online</p>
       </a>
   </div>
   
@@ -155,13 +157,13 @@
     </div>
 </div>
 
-  
+    
     
       <!-- Slide Contact -->
       <div class="swiper-slide contactMe">
         <h1 class="heading">Contact</h1>
         <div class="contactinfo"><i class="fa-solid fa-phone"></i>
-          <h3>Téléphone</h3>
+          <h3>Phone</h3>
           <p>0760209501</p>
         </div>
         <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
@@ -169,12 +171,12 @@
           <p>titouanmouysset@gmail.com</p>
         </div>
         <form>
-          <h2>Envoyez-moi un message<div class="SocialLinks">
+          <h2>Send me a message<div class="SocialLinks">
           </div></h2>
-          <input type="text" placeholder="Nom">
+          <input type="text" placeholder="Name">
           <input type="text" placeholder="Email">
-          <textarea rows="10" placeholder="Votre message..."></textarea>
-          <button class="primary">Envoyer</button>
+          <textarea rows="10" placeholder="Your message..."></textarea>
+          <button class="primary">Send</button>
         </form>
         <footer>
           <li>Copyright © 2023 Titouan Mouysset.</li>
@@ -189,7 +191,7 @@
   // Fonction pour changer la langue
   function changeLanguage() {
     // Redirige vers la version anglaise de la page
-    window.location.href = "indexAnglais.html";
+    window.location.href = "index.html";
   }
 </script>
 </body>
